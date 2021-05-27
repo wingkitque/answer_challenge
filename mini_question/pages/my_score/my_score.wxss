@@ -1,0 +1,7 @@
+/* pages/my_score/my_score.wxss */
+page {  
+  background: url('https://www.wingkit.xyz/question/img/my_score.jpg') no-repeat;
+  background-size:100% 100%; 
+  background-attachment: fixed; 
+  color: black;
+}

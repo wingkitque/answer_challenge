@@ -1,0 +1,92 @@
+/* pages/test/test.wxss */
+page {  
+  background: url('https://www.wingkit.xyz/question/img/test.jpg') no-repeat;
+  background-size:100% 100%; 
+  background-attachment: fixed; 
+  color: black;
+}
+
+.button-container3{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  width: 100%;
+  align-items: space-around;
+  padding-top: 200rpx;
+}
+.btn-share{
+  background-color: var(--none);
+  border: none;
+}
+.btn-share::after{
+border:none;
+}
+
+
+.display-container{
+  align-content: center;
+}
+.count-down1{
+  font-size: 60rpx;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
+.count-down {
+  font-size: 3.4em;
+  font-weight: 500;
+  align-self: center;
+  color: #87CEEB;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  width: 100%;
+  align-items: space-around;
+  padding-top: 300rpx;
+}
+
+.button-start{
+  background-color: #87CEEB;
+  height: 228rpx;
+  width: 228rpx;
+  border-radius: 50%;
+  border: 1px solid #00ccffcc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-text {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+}
+
+.video{
+  display:flex;                    
+ justify-content: center;       
+
+}
+.pic{
+  display:flex;           
+ justify-content: center;        
+
+}
+.pic pic1 { 
+  width:400rpx;
+  height:400rpx;
+  }
+
+.audio{
+  padding-top: 10rpx;
+  display:flex;                    
+ justify-content: center;    
+}
+

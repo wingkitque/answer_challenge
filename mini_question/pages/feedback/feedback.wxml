@@ -1,0 +1,29 @@
+<!-- <view>
+<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+<view> -->
+<view wx:if="{{!hasUserInfo && canIUse}}">
+  <view class='content'>
+    <view>申请获取以下权限</view>
+    <text>获得你的公开信息(昵称，头像等)</text>
+  </view>
+  <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo">
+    授权登录
+  </button>
+</view>
+<block wx:else>
+  <view class='textBox'>
+    <textarea class="inputBox" maxlength="-1" bindinput="bindKeyInput" placeholder="请写下您的意见吧！" value="{{inputValue}}">
+      <view class="line"></view>
+      <view class="line"></view>
+      <view class="line"></view>
+      <view class="line"></view>
+      <view class="line"></view>
+      <view class="line"></view>
+      <view class="line"></view>
+    </textarea>
+  </view>
+        <button class='btnn' bindtap="saveMemo" disabled="{{isLoading}}" loading="{{isLoading}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+          <image class='btnImg' src='../../img/sure.png'></image>
+          <view>发送</view>
+        </button>
+</block>

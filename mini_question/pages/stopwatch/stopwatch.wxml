@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view wx:if="{{!begin && challenge_times>0}}">
+  <view class="display-container2">
+    <text class="count-down1">挑战机会：{{challenge_times}} 次</text>
+  </view>
+  <view class="button-container1">
+    <view class="button-start" bindtap="begin_btn">
+      <text class="button-text">开始挑战</text>
+    </view>
+  </view>
+</view>
+
+<view wx:elif="{{!begin && challenge_times<=0}}">
+  <view class="display-container3">
+    <text class="count-down1">暂无挑战机会</text>
+  </view>
+  <view class="button-container3">
+  <button open-type="share" class="btn-share">
+    <view class="button-start" open-type="share">
+      <text class="button-text">分享</text>
+    </view>
+    </button>
+  </view>
+  
+</view>
+
+<view wx:else>
+
+
+  <view class="container">
+    <view class="display-container">
+      <text class="count-down">{{displayTime}}</text>
+    </view>
+
+    <view class="button-container">
+      <view class="button-start" bindtap="btn">
+        <text class="button-text">{{text}}</text>
+      </view>
+    </view>
+  <view class="display-container1">
+    <text class="count-down1">挑战时间：{{stopwatch_time}} 秒</text>
+  </view>
+    <!-- <view class="button-container">
+
+    <view class="button-start" bindtap="onStartHandler">
+      <text class="button-text">Start</text>
+    </view>
+
+    <view class="button-stop" bindtap="onStopHandler">
+      <text class="button-text">Stop</text>
+    </view>
+
+  </view> -->
+
+  </view>
+</view>

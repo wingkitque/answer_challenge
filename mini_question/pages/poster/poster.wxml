@@ -1,0 +1,8 @@
+<view class='am-title'>点击图片进行预览，点击右下角保存分享</view>
+  <view class="canvas">
+    <image src="{{poster}}" class="img" bindtap="previewImg"></image>
+  </view>
+  <view class='am-footer'>
+    <button open-type="share" data-tag="share1" id="btn_share1">转发</button>
+    <button bindtap='saveImage'>保存图片</button>
+  </view>

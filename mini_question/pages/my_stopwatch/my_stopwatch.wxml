@@ -1,0 +1,24 @@
+  <view class="padding text-center">
+    <view class="padding-xl radius shadow bg-none">挑战记录共有：{{sum}} 条</view>
+  </view>
+
+  <view class="cu-list menu-avatar">
+  <block wx:for="{{arry}}" wx:key="index">
+    <view class="cu-item">
+      <view class="cu-avatar round lg" style="background-image:url({{item.avatarUrl}});"></view>
+      <view class="content">
+        <view class="text-grey">第{{index+1}}次</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+							<text class="cuIcon-infofill text-grey  margin-right-xs"></text> 时间：{{item.time}}
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs">成绩</view>
+        <view class="text-grey text-df">{{item.stop_time}}</view>
+       
+      </view>
+    </view>
+  </block>
+</view>
